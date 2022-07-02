@@ -1,0 +1,3 @@
+[submodule "smaz"]
+	path = smaz
+	url = https://github.com/antirez/smaz.git

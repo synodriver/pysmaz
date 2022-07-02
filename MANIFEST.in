@@ -1,0 +1,3 @@
+recursive-include pysmaz  *
+recursive-include smaz  *
+include README.markdown
