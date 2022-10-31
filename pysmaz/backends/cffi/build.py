@@ -16,7 +16,7 @@ source = """
 """
 
 ffibuilder.set_source(
-    "pysmaz.backends.cffi._smaz_cffi",
+    "pysmaz.backends.cffi._smaz",
     source,
     sources=["./smaz/smaz.c"],
     include_dirs=["./smaz"],

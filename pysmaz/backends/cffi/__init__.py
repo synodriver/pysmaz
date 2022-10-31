@@ -1,7 +1,7 @@
 """
 Copyright (c) 2008-2021 synodriver <synodriver@gmail.com>
 """
-from pysmaz.backends.cffi._smaz_cffi import ffi, lib
+from pysmaz.backends.cffi._smaz import ffi, lib
 
 
 def compress(data: bytes, output_size=0) -> bytes:

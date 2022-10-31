@@ -32,8 +32,8 @@ class build_ext_compiler_check(build_ext):
 
 extensions = [
     Extension(
-        "pysmaz.backends.cython._smaz_cy",
-        ["pysmaz/backends/cython/_smaz_cy.pyx", "./smaz/smaz.c"],
+        "pysmaz.backends.cython._smaz",
+        ["pysmaz/backends/cython/_smaz.pyx", "./smaz/smaz.c"],
         include_dirs=["./smaz"],
     ),
 ]

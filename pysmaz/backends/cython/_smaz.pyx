@@ -40,7 +40,7 @@ cpdef inline bytes decompress(const uint8_t[::1] data, Py_ssize_t output_size = 
     return output[:buffer_updated]
 
 
-cpdef inline int compress_into(const uint8_t[::1] data, uint8_t[::1] output) except *:
+cpdef inline int compress_into(const uint8_t[::1] data, uint8_t[::1] output) except? 0:
     cdef Py_ssize_t output_size = output.shape[0]
     cdef int ret
     with nogil:
@@ -49,7 +49,7 @@ cpdef inline int compress_into(const uint8_t[::1] data, uint8_t[::1] output) exc
         raise ValueError("output buffer is too small")
     return ret
 
-cpdef inline int decompress_into(const uint8_t[::1] data, uint8_t[::1] output) except *:
+cpdef inline int decompress_into(const uint8_t[::1] data, uint8_t[::1] output) except? 0:
     cdef Py_ssize_t output_size = output.shape[0]
     cdef int ret
     with nogil:

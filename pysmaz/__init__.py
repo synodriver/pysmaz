@@ -22,4 +22,4 @@ if not _should_use_cffi():
 else:
     from pysmaz.backends.cffi import *
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
